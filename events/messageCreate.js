@@ -34,8 +34,7 @@ module.exports = {
       }
 
       if (command.info.user_permissions
-        && !message.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)
-        && !message.member.roles.cache.has(command.info.user_permissions)) {
+        && !message.member.permissions.has(command.info.user_permissions)) {
         return message.reply("**You don't have permissions to execute that command.**")
       }
 

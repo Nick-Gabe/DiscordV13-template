@@ -21,7 +21,7 @@ module.exports = {
         .setThumbnail(client.user.displayAvatarURL({size: 2048, format: 'png'}))
         .setDescription(`My latency is:`)
         .addFields(
-            { name: '✉️ Response Time:', value: `\`${Date.now() - message.createdTimestamp}\`ms`},
+            { name: '✉️ Response Time:', value: `\`${Math.abs(Date.now() - message.createdTimestamp)}\`ms`},
             {name: '📮 API Response Time:', value: `\`${Math.round(client.ws.ping)}\`ms`}
         )
         .setFooter(`🐲 ${client.user.username}`)
