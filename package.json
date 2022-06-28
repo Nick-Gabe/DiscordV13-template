@@ -1,7 +1,20 @@
 {
+  "name": "insert-your-project-name-here",
+  "description": "Insert your project description here",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon main.js"
+  },
   "dependencies": {
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
     "fs": "^0.0.1-security"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "keywords": [],
+  "author": "yourname"
 }
